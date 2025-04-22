@@ -6,6 +6,7 @@ import {
   ArrowPathIcon,
   CheckCircleIcon,
 } from '@heroicons/react/24/outline'
+import BackButton from '../components/BackButton'
 
 export default function CaseHub() {
   const [caseData, setCaseData] = useState({
@@ -67,6 +68,9 @@ export default function CaseHub() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
+      <div className="mb-6">
+        <BackButton />
+      </div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Case Hub</h1>
         <p className="text-gray-600 font-crimson">Upload and analyze patient cases with AI assistance</p>

@@ -5,6 +5,7 @@ import {
   UserCircleIcon,
   ComputerDesktopIcon,
 } from '@heroicons/react/24/outline'
+import BackButton from '../components/BackButton'
 
 const initialMessages = [
   {
@@ -54,6 +55,9 @@ export default function AIAssistant() {
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
+      <div className="mb-6">
+        <BackButton />
+      </div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">AI Assistant</h1>
         <p className="text-gray-600 font-crimson">Your personal medical knowledge companion</p>
