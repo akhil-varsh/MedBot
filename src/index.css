@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --medical-gradient: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+.hero-gradient {
+  background: var(--medical-gradient);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.nav-link {
+  @apply text-gray-600 hover:text-medical-600 transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-medical-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-medical-700 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-white text-medical-600 border-2 border-medical-600 px-6 py-3 rounded-lg font-semibold hover:bg-medical-50 transition-colors duration-200;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+  h4 {
+    @apply text-xl font-semibold;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-medical-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6;
+  }
+}
